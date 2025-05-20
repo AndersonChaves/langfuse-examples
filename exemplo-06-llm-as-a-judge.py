@@ -13,15 +13,14 @@ trace = langfuse.trace(name="meu-exemplo", user_id="user-123")
 span = trace.span(name="exemplo-llm-as-a-judge")
 
 # Chamada à OpenAI
-input = "Me fale sobre o tecgraf. Seja sucinto. Fim"
+input = "Me fale sobre o langfuse. Seja sucinto."
 answer = llm.invoke(input + "fim.")
-ground_truth = "O Tecgraf é um instituto de tecnologia da PUC-Rio, " \
-               "que atua na pesquisa e desenvolvimento de soluções computacionais" \
-               "focadas principalmente nas indústrias de óleo e gás. " \
-               "Fundado em colaboração com a Petrobras, o Tecgraf oferece " \
-               "expertise em áreas como computação gráfica, simulação numérica, " \
-               "e sistemas de informação, contribuindo para inovações " \
-               "tecnológicas nesse setor."
+ground_truth = "O Langfuse é uma ferramenta de observabilidade para aplicações que" \
+               "utilizam modelos de linguagem (LLMs). " \
+               "Ele permite rastrear, monitorar e analisar interações com LLMs," \
+               "ajudando a depurar fluxos de conversação," \
+               " medir desempenho e otimizar o uso de APIs de IA, " \
+               "como OpenAI e Azure OpenAI."  
 
 # Também pode adicionar inputs e outros metadados
 print(answer)
