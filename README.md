@@ -7,3 +7,5 @@ This repository contains examples and utilities for working with langfuse to mon
 - **Simple API Requests**: Examples on how to make basic requests to LLM APIs and monitor their responses.
 - **Chat Interactions**: Implement and monitor chat-based workflows with LLMs for conversational applications.
 - **LLM as a Judge**: Use LLMs to evaluate data or make decisions, and monitoring to ensure accuracy and consistency.
+
+Make sure to fill the `.env` file in the root of the project with the required environment variables. 
